@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server"
+    "start": "node server",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "Michael Cheng <cheng.c.mike@gmail.com> (http://michaelcheng.io)",
@@ -13,7 +15,8 @@
     "express": "^4.13.4",
     "lodash": "^4.2.1",
     "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react-dom": "^0.14.7",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-core": "^6.4.5",
@@ -26,5 +29,6 @@
   },
   "engines": {
     "node": "5.5.0"
-  }
+  },
+  "snyk": true
 }
